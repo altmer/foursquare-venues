@@ -1,0 +1,27 @@
+# Phase 1 - Coding
+
+Our mates are looking for venues nearby our offices, foursquare is a service that allows searching for places given a location.
+We would like to provide our mates with a function to query for venues given latitude and longitude.
+
+Your task is to make that function, it should accept `lat`, `long` and return the list of venues that foursquare returns.
+You can check the online resources that you want without copying the solution.
+
+# Phase 2 - Coding extended
+
+Our mates are now in a hurry and need to look for the closest venue on the list.
+Your task now is to sort the list coming from foursquare by proximity to the input coordinates.
+You can use the Euclidean distance (straight line) to compute the distance between points.
+You can check documentation online for Euclidean distance.
+
+# Phase 3 - Web Api
+
+The function was a complete success and we want to make it available for all non-techie mates.
+Your task now will be to expose the previously written function in an HTTP server that should respond in JSON with the list of venues given a pair of coordinates.
+
+# Phase 4 - Scalability/Caching
+
+Everyone is using your endpoint and sharing it with friends to find nearby venues.
+Even though the function has been deployed into several instances we cannot handle the load and would like to create a caching mechanism.
+What caching mechanism would you use?
+Please implement it.
+You are free to use the libraries you want.
